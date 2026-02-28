@@ -1,8 +1,7 @@
-package javafoundation;
+package copyfile;
 
 import java.io.IOException;
-import com.mode.*;
-
+import copyfile.com.mode.*;
 
 public class CopyFile {
 	public static void main(String[] args)
