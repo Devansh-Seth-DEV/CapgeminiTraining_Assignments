@@ -1,4 +1,4 @@
-package com.logistic;
+package foundation;
 
 import java.util.Scanner;
 
@@ -42,4 +42,5 @@ public class Logistic {
 
         sc.close();
     }
+
 }
