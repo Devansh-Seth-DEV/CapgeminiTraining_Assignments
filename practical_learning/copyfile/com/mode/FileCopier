@@ -1,0 +1,9 @@
+package copyfile.com.mode;
+
+public interface FileCopier {	
+	public void copyFile(String src, String dest);
+	
+	public static final int CH_NEWLINE = 10;
+	public static final int CH_EOF = -1;
+	public static final int CH_SPACE = 32;
+}
