@@ -1,4 +1,4 @@
-package javafoundation.copyfile.mode;
+package copyfile.com.mode;
 
 public class FileCopyManager {
 	public FileCopyManager() {}
@@ -16,4 +16,5 @@ public class FileCopyManager {
 	}
 	
 	private FileCopier copier;
+
 }
