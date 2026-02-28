@@ -1,4 +1,4 @@
-package javafoundation.copyfile.mode;
+package copyfile.com.mode;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -36,3 +36,4 @@ public class HalfLineFileCopier implements FileCopier {
 		}
 	}
 }
+
