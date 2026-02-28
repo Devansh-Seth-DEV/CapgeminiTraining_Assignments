@@ -36,6 +36,19 @@ public class BookDataSeeder {
 		allBooks.add(new Book("The Alchemist", "Paulo Coelho", 16.00, 1988));
 		allBooks.add(new Book("Life of Pi", "Yann Martel", 15.50, 2001)); // Duplicate Year!
 		allBooks.add(new Book("The Catcher in the Rye", "J.D. Salinger", 12.50, 1951));	
+		
+		// 6. Books with unusual titles or missing info
+		allBooks.add(new Book(" ", "Anonymous", 5.00, 2020)); // Blank title
+		allBooks.add(new Book("SQL Essentials", null, 35.00, 2018)); // Missing Author
+		allBooks.add(new Book("Python Basics", "John Smith", 0.00, 2024)); // Free Book (0.00)
+
+		// 7. More modern duplicates for grouping later
+		allBooks.add(new Book("Spring in Action", "Craig Walls", 48.00, 2020));
+		allBooks.add(new Book("Cloud Native Java", "Josh Long", 52.00, 2017));
+		
+		// 8. Books with identical prices to test sorting ties
+		allBooks.add(new Book("Modern JS", "Dan Abramov", 45.00, 2021)); // Same price as Clean Code
+		allBooks.add(new Book("Vue Essentials", "Evan You", 22.00, 2019)); // Same price as Game of Thrones
 	}
 	
 	public static List<Book> getAllBooks() {
