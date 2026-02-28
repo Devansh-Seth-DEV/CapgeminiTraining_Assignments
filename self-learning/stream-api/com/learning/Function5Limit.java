@@ -1,6 +1,5 @@
 package com.learning;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,6 +32,10 @@ public class Function5Limit {
 		List<Book> shelf = allBooks.stream()
 				.limit(3)	// Only the first 3 books pass through
 				.collect(Collectors.toList());
+
+		shelf.forEach(book -> 
+			System.out.println("book: { %s }".formatted(book))
+		);
 		
 		/// Combining limit with other functions
 		// `limit` becomes very powerful when you use it after sorting.

@@ -1,8 +1,6 @@
 package com.learning;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.model.Book;
@@ -31,6 +29,9 @@ public class Function7Distinct {
 				.map(Book::getAuthor)	// First, get all author names
 				.distinct()				// Remove duplicates
 				.collect(Collectors.toList());
+		
+		System.out.println("UNIQUE AUTHORS");
+		uniqueAuthors.forEach(System.out::println);
 				
 		/// --------------- YOUR TURN --------------- 
 		// Imagine your library has 50 books, but many are written by the same person.
@@ -43,5 +44,8 @@ public class Function7Distinct {
 				.sorted()
 				.limit(3)
 				.collect(Collectors.toList());
+
+		System.out.println("\n3 OLDEST UNIQUE PUBLICATION YEARS");
+		oldestUniquePublicationYears.forEach(System.out::println);
 	}
 }

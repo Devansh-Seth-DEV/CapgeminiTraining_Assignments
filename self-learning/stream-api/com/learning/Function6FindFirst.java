@@ -3,7 +3,6 @@ package com.learning;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 import com.model.Book;
 import com.repository.BookDataSeeder;
@@ -33,5 +32,7 @@ public class Function6FindFirst {
 		Optional<Book> oldestBook = allBooks.stream()
 				.sorted(Comparator.comparing(Book::getPublishedYear))
 				.findFirst();
+		
+		System.out.println("book: { %s }".formatted(oldestBook));
 	}
 }

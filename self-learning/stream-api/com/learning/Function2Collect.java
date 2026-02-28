@@ -43,5 +43,9 @@ public class Function2Collect {
 		List<Book> before1940Books = allBooks.stream()
 				.filter(book -> book.getPublishedYear() < 1940)
 				.collect(Collectors.toList()); // converts stream into List<Book>
+		
+		before1940Books.forEach(book -> 
+			System.out.println("book: { %s }".formatted(book))
+		);
 	}
 }

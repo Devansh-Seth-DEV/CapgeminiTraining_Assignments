@@ -30,11 +30,19 @@ public class Function4Sorted {
 				.map(Book::getTitle) // Extract titles
 				.sorted()			 // Sort Strings alphabetically (default)
 				.collect(Collectors.toList());
+
+		System.out.println("SORTED TITLES");
+		alphabeticalTitles.forEach(System.out::println);
 		
 		// If we want to sort by a specific property—like Price
 		// we use Comparator.comparing()
 		List<Book> cheapestFirst = allBooks.stream()
 				.sorted(Comparator.comparing(Book::getPrice))
 				.collect(Collectors.toList());
+
+		System.out.println("\nCHEAPEST BOOKS");
+		cheapestFirst.forEach(book -> 
+			System.out.println("book: { %s }".formatted(book))
+		);
 	}
 }

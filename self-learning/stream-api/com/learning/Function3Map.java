@@ -31,6 +31,9 @@ public class Function3Map {
 				.map(book -> book.getTitle()) // Transform Book object -> String (Titles)
 				.collect(Collectors.toList());
 		
+		System.out.println("BOOK TITLES");
+		bookTitles.forEach(System.out::println);
+		
 		/// --------------- YOUR TURN --------------- 
 		// If you wanted to get a list of only the Authors' names for books 
 		// that cost more than 30.00, 
@@ -40,5 +43,8 @@ public class Function3Map {
 				.filter(book -> book.getPrice() > 30.00)
 				.map(book -> book.getAuthor())
 				.collect(Collectors.toList());
+		
+		System.out.println("\nBOOK AUTHORS");
+		bookAuthors.forEach(System.out::println);
 	}
 }

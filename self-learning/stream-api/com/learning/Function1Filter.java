@@ -32,6 +32,8 @@ public class Function1Filter {
 				.filter(book -> book.getPrice() > 20.00) // This is the filter!
 				.collect(Collectors.toList());
 		
-
+		expensiveBooks.forEach(book -> 
+			System.out.println("book: { %s }".formatted(book))
+		);
 	}
 }
