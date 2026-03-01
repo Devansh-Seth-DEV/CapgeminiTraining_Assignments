@@ -5,6 +5,7 @@ public class Book {
 	private String author;
 	private Double price;
 	private Integer publishedYear;
+	private Integer pageCount;
 	
 	public Book() { super(); }
 	
@@ -12,12 +13,14 @@ public class Book {
 		String title,
 		String author,
 		Double price,
-		Integer publishedYear
+		Integer publishedYear,
+		Integer pageCount
 	) {
 		this.title = title;
 		this.author = author;
 		this.price = price;
 		this.publishedYear = publishedYear;
+		this.setPageCount(pageCount);
 	}
 	
 	public String getTitle() {
@@ -50,6 +53,14 @@ public class Book {
 
 	public void setPublishedYear(Integer publishedYear) {
 		this.publishedYear = publishedYear;
+	}
+
+	public Integer getPageCount() {
+		return pageCount;
+	}
+
+	public void setPageCount(Integer pageCount) {
+		this.pageCount = pageCount;
 	}
 
 	@Override
